@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
+<html lang="ja"> // 日本語で書かれていることを示す
+  <head> // h文書のヘッダ部分を指定
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MUSESメニュー</title>
+    <title>MUSESメニュー</title> // 検索で表示される見出し
     <link href="index.css" rel="stylesheet" />
-    <link href="menu.css" rel="stylesheet" />
+    <link href="menu.css" rel="stylesheet" /> 
   </head>
-  <body>
-    <header>
-      <figure id="logo">
-        <img src="img/logo.png" />
+  <body>　// Webページの主要な部分を定義
+    <header>　// グループにするのに使える
+      <figure id="logo"> // 画像の張り付けで使用
+        <img src="img/logo.png" /> // 画像の貼り付け
       </figure>
       <div id="user_name"><img src="img/user_icon.png" />武庫川　花子 さん</div>
-      <div id="upper_menu">
+      <div id="upper_menu"> // デザインやレイアウトを構成するために使用。spanタグとの違いはインライン要素に使うこと
         <div>
           <img src="img/pc_site.png" /><br />
           PC版
@@ -40,7 +40,7 @@
       <p>登録されていません</p>
     </header>
 
-    <main id="info">
+    <main id="info"> // bodyタグ内で使用。アクセシビリティ向上のために使用
       <div id="info_header"><img src="img/loupe.gif" />info@MUSES参照</div>
       <div id="info_link">
         <div id="caution">
@@ -87,7 +87,7 @@
       <div id="info_footer"><img src="img/loupe.gif" />info@MUSES参照</div>
     </main>
 
-    <footer>
+    <footer> // フッターを表す
       <div id="link">
         <div><a href="index.html">HOME &gt;</a></div>
       </div>
