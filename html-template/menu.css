@@ -1,4 +1,5 @@
-main#info { // #はhtmlでidタグを設定している
+main#info {
+  // #はhtmlでidタグを設定している
   margin-bottom: 2rem; // remは相対単位。
   border: solid 0.5rem #f0f0f0; // 実線、非常に薄い灰色
 }
@@ -37,7 +38,7 @@ main#info { // #はhtmlでidタグを設定している
 }
 
 #unread_num .exmark {
-  vertical-align: top; // 
+  vertical-align: top; //
 }
 
 #info_list {
