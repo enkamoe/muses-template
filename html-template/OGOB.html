@@ -45,30 +45,85 @@
     </header>
 
     <main id="info">
-      <div id="info_header"><img src="img/loupe.gif" />OG・OB報告を見る</div>
-      <br />
+      <div id="info_header"><img src="img/loupe.gif" /> OG・OB関連</div>
+      <p>◆OG・OB報告を見る</p>
 
       <div>
-        ◆投稿者条件<br />
-        卒業年度：<br />
-        所属学科：<br />
-        業界：<br />
-        職種：<br /><br />
-        ◆絞り込み<br />
-        回答日：新しい順 or 古い順<br /><br />
-        <button>検索</button>
-      </div>
-
-      <br />
-      <div>
-        <div id="info_footer"><img src="img/loupe.gif" />OG・OB訪問申込</div>
+        ＜学生条件＞<br />
+        卒業年度：
+        <select name="graduate">
+          <option value="">選択</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+        </select>
         <br />
-        ◆さらに企業の雰囲気や人間関係等を知りたければ、OG・OB訪問をすることもできます。<br />
-        ・以下の企業のOG・OB訪問が可能です。
+        所属学科：
+        <select name="department">
+          <option value="">選択</option>
+          <option value="情報メディア">情報メディア</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <br />
+        業界：
+        <select name="industry">
+          <option value="">選択</option>
+          <option value="メーカー">メーカー</option>
+          <option value="商社">商社</option>
+          <option value="小売">小売</option>
+          <option value="金融">金融</option>
+          <option value="サービス">サービス</option>
+          <option value="ソフトウェア・通信">ソフトウェア・通信</option>
+          <option value="マスコミ">マスコミ</option>
+          <option value="官公庁・公社・団体">官公庁・公社・団体</option>
+        </select>
+        <br />
+        職種：
+        <select name="occupation">
+          <option value="">選択</option>
+          <option value="営業">営業</option>
+          <option value="SE">SE</option>
+          <option value="コーポレートスタッフ">コーポレートスタッフ</option>
+        </select>
+        <br /><br />
+
+        ＜絞り込み＞<br />
+        回答日：
+        <select name="order">
+          <option>選択</option>
+          <option value="新しい順">新しい順</option>
+          <option value="古い順">古い順</option>
+        </select>
+        <p><button>検索</button></p>
+      </div>
+      <hr />
+      <div>
+        <p>◆OG・OB訪問申込</p>
+        ・さらに企業の雰囲気や人間関係等を知りたければ、OG・OB訪問をすることもできます。<br />
+        ・以下の企業のOG・OB訪問が可能です。<br />
+        ・<br /><br />
+
+        <table>
+          <tr>
+            <th>申請</th>
+            <th>卒業年度</th>
+            <th>業界</th>
+            <th>企業名</th>
+            <th>職種</th>
+          </tr>
+          <tr>
+            <td colspan="5">該当データがありません</td>
+          </tr>
+        </table>
       </div>
     </main>
     <br />
+    <hr />
+
     <footer>
+      <div id="info_footer"><img src="img/loupe.gif" /></div>
+      <br />
       <div id="link">
         <div><a href="index.html">HOME &gt;</a></div>
         <div><a href="carrer.html">キャリア支援 &gt;</a></div>
