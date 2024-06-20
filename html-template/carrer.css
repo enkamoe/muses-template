@@ -62,3 +62,93 @@ figure#logo {
 #upper_menu p {
   margin: 0;
 }
+#upper_menu div:nth-child(1) {
+  background-color: #ef8683;
+}
+
+#upper_menu div:nth-child(2) {
+  background-color: #ffff91;
+}
+
+#upper_menu div:nth-child(3) {
+  background-color: #ef86bd;
+}
+
+#news {
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+#news_title {
+  display: flex;
+  color: white;
+  background-color: var(--bg-color);
+  padding: 0.5rem;
+}
+
+:is(#news_title, #news_num) img {
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+#news_num {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  color: blue;
+}
+
+#link {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#link div {
+  width: fit-content;
+  color: white;
+  background-color: var(--bg-color);
+  padding: 0.5rem 2rem;
+  margin-left: 0.5rem;
+}
+
+#link div a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+header p:last-child {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+main#top div {
+  display: grid;
+  padding: 0.9px;
+  width: 410px;
+
+  text-align: center;
+}
+
+main#top div:nth-child(1) {
+  background-color: #6ea59f;
+}
+footer p {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#information {
+  border: solid 1px #feb64a;
+  border-radius: 0.5rem;
+  height: 5rem;
+  background-color: white;
+}
+
+table,
+th,
+td {
+  border: solid 1px gray;
+  border-collapse: collapse;
+}
