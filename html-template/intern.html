@@ -46,70 +46,126 @@
 
     <main id="info">
       <div id="info_header">
-        <img src="img/loupe.gif" />インターンシップ申込状況
+        <img src="img/loupe.gif" />インターンシップ情報
       </div>
-      <br />
+
+      <p>◆インターンシップ申込状況</p>
 
       <div>
         <table>
           <tr>
             <th>業界</th>
+            <th>開催日</th>
             <th>企業名</th>
-            <th>内容</th>
-            <th>開催日時</th>
+            <th>名称</th>
             <th>申込年月日</th>
-            <th>状態</th>
+            <th>状況</th>
           </tr>
           <tr>
-            <td>IT</td>
-            <td></td>
-            <td>１週間の○○</td>
-            <td></td>
-            <td></td>
-            <td>エントリー済み</td>
+            <td colspan="6">該当データがありません</td>
           </tr>
         </table>
+        <br />
       </div>
+      <hr />
+      <p>◆インターンシップ募集一覧</p>
+      <div id="">
+        ・現在本学で募集中のインターンシップ一覧です。名称をクリックすると詳細・エントリー方法を確認することができます。<br />
+        ・ここに表示されないインターンシップは、本学で募集していないので各自で調べて応募してください。
+      </div>
+      <br />
+      ＜絞り込み検索＞
+      <p><button>リセット</button></p>
+      業界：
+      <select name="industry">
+        <option value="">選択</option>
+        <option value="メーカー">メーカー</option>
+        <option value="商社">商社</option>
+        <option value="小売">小売</option>
+        <option value="金融">金融</option>
+        <option value="サービス">サービス</option>
+        <option value="ソフトウェア・通信">ソフトウェア・通信</option>
+        <option value="マスコミ">マスコミ</option>
+        <option value="官公庁・公社・団体">官公庁・公社・団体</option>
+      </select>
+      <br />
+      職種：
+      <select name="occupation">
+        <option value="">選択</option>
+        <option value="営業">営業</option>
+        <option value="SE">SE</option>
+        <option value="コーポレートスタッフ">コーポレートスタッフ</option>
+      </select>
+      <br />
+      開催県：
+      <select name="prefecture">
+        <option value="">選択</option>
+        <option value="東京">東京</option>
+        <option value="大阪">大阪</option>
+        <option value="広島">広島</option>
+      </select>
+      <br />
+      開催日：
+      <select name="date">
+        <option value="">選択</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      <br />
+      開催期間：
+      <select name="period">
+        <option value="">選択</option>
+        <option value="1day">1day</option>
+        <option value="2days">2days</option>
+        <option value="3days">3days</option>
+        <option value="5days">5days</option>
+        <option value="1week">1week</option>
+        <option value="2weeks">2weeks</option>
+        <option value="それ以上">それ以上</option>
+      </select>
+      <br />
+      宿泊費・交通費支給：
+      <select name="expense">
+        <option value="">選択</option>
+        <option value="両方あり">両方あり</option>
+        <option value="宿泊費のみ支給">宿泊費のみ支給</option>
+        <option value="交通費のみ支給">交通費のみ支給</option>
+      </select>
       <br />
 
-      <div id="info_footer">
-        <img src="img/loupe.gif" />インターンシップ申込一覧
-      </div>
+      実施形式：
+      <select name="how">
+        <option value="">選択</option>
+        <option value="対面">対面</option>
+        <option value="オンライン">オンライン</option>
+        <option value="ハイブリット">ハイブリット</option>
+      </select>
       <br />
-      <div id="">
-        現在、本学で募集中のインターンシップ一覧です。名称をクリックすると詳細の確認・エントリー方法の閲覧が可能です。<br />
-        ★ここに掲載されていない企業は、本学では募集していないので各自で調べて応募してください。
-      </div>
-      <br />
-      ◆絞り込み検索　<button>リセット</button><br />
-      業界：<br />
-      職種：<br />
-      開催エリア：<br />
-      開催日：<br />
-      開催期間：<br />
-      宿泊費・交通費支給：<br />
-      実施形式：<br />
-      <br />
-      <button>検索</button><br />
-      <br />
-      (↓絞り込むと行数が減る)
+      <p>
+        <button>検索</button>
+      </p>
+
       <table>
         <tr>
           <th>業界</th>
           <th>開催日時</th>
+          <th>企業名</th>
           <th>名称</th>
           <th>申込受付期間</th>
         </tr>
         <tr>
-          <td>　</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td colspan="5">該当データがありません</td>
         </tr>
       </table>
     </main>
+
     <br />
+
     <footer>
+      <div id="info_footer"><img src="img/loupe.gif" /></div>
+      <br />
+
       <div id="link">
         <div><a href="index.html">HOME &gt;</a></div>
         <div><a href="carrer.html">キャリア支援 &gt;</a></div>
