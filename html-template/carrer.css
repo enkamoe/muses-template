@@ -152,3 +152,8 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
+
+.from a {
+  text-decoration: none;
+  color: black;
+}
