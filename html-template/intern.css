@@ -195,3 +195,8 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
+
+#report a {
+  text-decoration: none;
+  color: skyblue;
+}
