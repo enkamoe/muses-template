@@ -195,6 +195,6 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
-.hidden {
-  display: none;
+main p {
+  background-color: #bad5c5;
 }
