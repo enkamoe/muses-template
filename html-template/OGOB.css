@@ -195,3 +195,6 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
+.hidden {
+  display: none;
+}
