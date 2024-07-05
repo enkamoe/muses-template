@@ -46,37 +46,84 @@
 
     <main id="info">
       <div id="info_header">
-        <img src="img/loupe.gif" />インターンシップ関連
+        <img src="img/loupe.gif" />説明会・インターンシップ関連情報
       </div>
 
-      <p>◆インターンシップ申込状況</p>
-
       <div>
+        <strong>◆説明会申込状況（事前・事後を含む）</strong><br />
+        ・申し込んだ説明会を取り消す場合、「取消」ボタンを押してください。
+
         <table>
           <tr>
-            <th>業界</th>
-            <th>開催日</th>
+            <th>申込取消</th>
+            <th>開催日時</th>
+            <th>企業名</th>
+            <th>名称</th>
+            <th>内容</th>
+            <th>申込受付期間</th>
+          </tr>
+          <tr>
+            <td>取消</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>取消</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <br />
+        <strong>◆インターンシップ申込状況</strong><br />
+        ・インターンシップ終了後、報告書を提出してください。
+        <table>
+          <tr>
+            <th>開催日時</th>
+            <th>種別</th>
             <th>企業名</th>
             <th>名称</th>
             <th>申込年月日</th>
             <th>状況</th>
+            <th>報告書</th>
           </tr>
           <tr>
-            <td colspan="6">該当データがありません</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>申込済</td>
+            <td id="report"><a href="">報告書</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>説明会終了</td>
+            <td id="report"><a href="">報告書</a></td>
           </tr>
         </table>
         <br />
       </div>
       <hr />
-      <p>◆インターンシップ募集一覧</p>
+      <strong>◆説明会・インターンシップ募集一覧</strong>
       <div id="">
-        ・現在本学で募集中のインターンシップ一覧です。名称をクリックすると詳細・エントリー方法を確認することができます。<br />
+        ・現在本学で募集中のインターンシップ一覧です。名称をクリックすると詳細を確認することができます。<br />
         ・ここに表示されないインターンシップは、本学で募集していないので各自で調べて応募してください。
       </div>
       <br />
+
       ＜絞り込み検索＞
       <p><button>リセット</button></p>
-      業界：
+      業種：
       <select name="industry">
         <option value="">選択</option>
         <option value="メーカー">メーカー</option>
@@ -89,14 +136,6 @@
         <option value="官公庁・公社・団体">官公庁・公社・団体</option>
       </select>
       <br />
-      職種：
-      <select name="occupation">
-        <option value="">選択</option>
-        <option value="営業">営業</option>
-        <option value="SE">SE</option>
-        <option value="コーポレートスタッフ">コーポレートスタッフ</option>
-      </select>
-      <br />
       開催県：
       <select name="prefecture">
         <option value="">選択</option>
@@ -105,10 +144,13 @@
         <option value="広島">広島</option>
       </select>
       <br />
-      開催日：
+      開催時期：
       <select name="date">
         <option value="">選択</option>
-        <option value=""></option>
+        <option value="7月">7月</option>
+        <option value="8月">7月8日(月)～7月13日(日)</option>
+        <option value="">7月1日(月)～7月6日(土)</option>
+        <option value="">7月1日(月)～7月6日(土)</option>
         <option value=""></option>
         <option value=""></option>
       </select>
