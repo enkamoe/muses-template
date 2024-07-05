@@ -195,3 +195,24 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
+.speech-bubble {
+  position: relative;
+  background: #8dc16f;
+  border-radius: 0.5em;
+  padding: 5px;
+  color: white;
+  max-width: 200px;
+  text-align: center;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: #8dc16f;
+}
