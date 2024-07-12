@@ -9,6 +9,7 @@
     <link href="consulandapply.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
     <link href="menu.css" rel="stylesheet" />
+    <script src="../js-template/consul&apply.js"></script>
   </head>
   <body>
     <header>
@@ -47,41 +48,45 @@
     <main id="info">
       <div>
         <div id="info_header">
-          <img src="img/loupe.gif" />キャリア・就職等相談関連
+          <img src="img/loupe.gif" />キャリア／就職等相談申込・確認
         </div>
-        <p>◆キャリア・就職等相談情報申込状況</p>
-        <div>以下は面談予定です。</div>
+        <p>◆キャリア／就職等相談申込状況</p>
+        <div id="message">○○さんの面談予定です。<br /></div>
         <table>
           <tr>
+            <th>取消</th>
             <th>日時</th>
             <th>相談種別</th>
             <th>場所</th>
             <th>担当者</th>
           </tr>
           <tr>
-            <td colspan="4">該当データがありません</td>
+            <td class="clickable" onclick="return confirmCancel()">取消</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </table>
+        面談を取消したい場合は「取消」を押してください。
         <br />
       </div>
       <hr />
 
       <div id="">
-        <p>◆キャリア・就職等相談申込フォーム</p>
-        1.相談種別を選択してください。<br />
+        <p>◆キャリア／就職等相談申込</p>
+        １. 相談種別を選択してください。<br />
         <label>
           <input type="radio" name="consult" value="job" />就職相談 </label
         ><br />
-        就職活動に関する具体的な相談<br />
+
         <label>
           <input
             type="radio"
             name="consult"
             value="jobforpharmacy"
-          />就職相談(薬学部学生) </label
-        ><br />
-        ★薬学部学生用(薬学部事務室で相談を行います。)<br />
-        就職活動に関する具体的な相談
+          />就職相談(薬学部学生)
+        </label>
         <br />
         <label>
           <input
@@ -90,24 +95,33 @@
             value="carrer"
           />キャリア相談 </label
         ><br />
-        自分自身のキャリアに関する相談<br />
         <label>
           <input
             type="radio"
             name="consult"
             value="tokyosupport"
-          />東京就活のサポート(東京センター女性スタッフ) </label
-        ><br />
-        東京等首都圏での就職活動や生活等に関わる相談(Zoomのみ)<br />
+          />東京就活のサポート(Zoomのみ) </label
+        ><br />※東京等首都圏での就職活動や生活等に関わる相談<br />
         <label>
-          <input type="radio" name="consult" value="public" />公務員相談</label
+          <input
+            type="radio"
+            name="consult"
+            value="public"
+          />公務員に関する相談</label
         ><br />
-        公務員に関する具体的な相談<br />
         <label>
           <input type="radio" name="consult" value="local" />地元就職相談</label
         ><br />
-        地元での就職に関する具体的な相談<br />
-        <p><button>次へ</button></p>
+        <br />
+        ２. 相談日程<br />
+        空いている日（青色）から選択してください。<br />
+        <input
+          type="date"
+          value="2024-07-19"
+          min="2024-06-01"
+          max="2025-03-31"
+        />
+
         <hr />
       </div>
     </main>

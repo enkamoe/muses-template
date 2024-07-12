@@ -195,3 +195,7 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
+
+.clickable {
+  cursor: pointer;
+}
