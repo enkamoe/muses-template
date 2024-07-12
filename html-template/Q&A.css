@@ -195,17 +195,22 @@ td {
   border: solid 1px gray;
   border-collapse: collapse;
 }
-.speech-bubble {
+.A-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 200px;
+}
+.A-bubble {
   position: relative;
   background: #8dc16f;
   border-radius: 0.5em;
   padding: 5px;
   color: white;
-  max-width: 200px;
+  max-width: 300px;
   text-align: center;
 }
 
-.speech-bubble::after {
+.A-bubble::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -215,4 +220,30 @@ td {
   height: 0;
   border: 10px solid transparent;
   border-left-color: #8dc16f;
+}
+.Q-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 200px;
+}
+.Q-bubble {
+  position: relative;
+  background: #00aabb;
+  border-radius: 0.5em;
+  padding: 5px;
+  color: white;
+  max-width: 300px;
+  margin: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.Q-bubble::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #00aabb transparent transparent;
+  top: 10px;
+  left: -10px;
 }
