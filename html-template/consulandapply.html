@@ -47,41 +47,50 @@
     <main id="info">
       <div>
         <div id="info_header">
-          <img src="img/loupe.gif" />キャリア・就職等相談関連
+          <img src="img/loupe.gif" />キャリア／就職等相談申込・確認
         </div>
-        <p>◆キャリア・就職等相談情報申込状況</p>
-        <div>以下は面談予定です。</div>
+        <p>◆キャリア／就職等相談申込状況</p>
+        <div id="message">現在の面談予定はありません。<br /></div>
         <table>
           <tr>
-            <th>日時</th>
+            <th>取消</th>
             <th>相談種別</th>
+            <th>日時</th>
             <th>場所</th>
             <th>担当者</th>
           </tr>
           <tr>
-            <td colspan="4">該当データがありません</td>
+            <td
+              id="cancel"
+              class="clickable"
+              onclick="return confirmCancel()"
+            ></td>
+            <td id="typetype"></td>
+            <td id="dayday"></td>
+
+            <td>　</td>
+            <td></td>
           </tr>
         </table>
+        面談を取消したい場合は「取消」を押してください。<br />（前日12時まで）
         <br />
       </div>
       <hr />
 
-      <div id="">
-        <p>◆キャリア・就職等相談申込フォーム</p>
-        1.相談種別を選択してください。<br />
+      <div>
+        <p>◆キャリア／就職等相談申込</p>
+        ・相談種別を選択してください。<br />
         <label>
           <input type="radio" name="consult" value="job" />就職相談 </label
         ><br />
-        就職活動に関する具体的な相談<br />
+
         <label>
           <input
             type="radio"
             name="consult"
             value="jobforpharmacy"
-          />就職相談(薬学部学生) </label
-        ><br />
-        ★薬学部学生用(薬学部事務室で相談を行います。)<br />
-        就職活動に関する具体的な相談
+          />就職相談(薬学部学生)
+        </label>
         <br />
         <label>
           <input
@@ -90,24 +99,63 @@
             value="carrer"
           />キャリア相談 </label
         ><br />
-        自分自身のキャリアに関する相談<br />
         <label>
           <input
             type="radio"
             name="consult"
             value="tokyosupport"
-          />東京就活のサポート(東京センター女性スタッフ) </label
-        ><br />
-        東京等首都圏での就職活動や生活等に関わる相談(Zoomのみ)<br />
+          />東京就活のサポート(Zoomのみ) </label
+        ><br />※東京等首都圏での就職活動や生活等に関わる相談<br />
         <label>
-          <input type="radio" name="consult" value="public" />公務員相談</label
+          <input
+            type="radio"
+            name="consult"
+            value="public"
+          />公務員に関する相談</label
         ><br />
-        公務員に関する具体的な相談<br />
         <label>
           <input type="radio" name="consult" value="local" />地元就職相談</label
         ><br />
-        地元での就職に関する具体的な相談<br />
-        <p><button>次へ</button></p>
+        <br />
+        ・相談日を選択してください。<br />
+        以下の候補から相談可能です。<br />
+        <select name="consultdate" id="consultdate">
+          <option value="">希望面談日を選択してください</option>
+          <option value="7月22日(月) 14:00~15:00">
+            7月22日(月) 14:00~15:00
+          </option>
+          <option value="7月22日(月) 15:00~16:00">
+            7月22日(月) 15:00~16:00
+          </option>
+          <option value="7月22日(月) 16:00~17:00">
+            7月22日(月) 16:00~17:00
+          </option>
+
+          <option value="7月23日(火) 14:00~15:00">
+            7月23日(火) 14:00~15:00
+          </option>
+          <option value="7月24日(水) 14:00~15:00">
+            7月24日(水) 14:00~15:00
+          </option>
+          <option value="7月25日(木) 14:00~15:00">
+            7月25日(木) 14:00~15:00
+          </option>
+          <option value="7月26日(金) 14:00~15:00">
+            7月26日(金) 14:00~15:00
+          </option>
+          <option value="7月29日(月) 14:00~15:00">
+            7月29日(月) 14:00~15:00
+          </option>
+          <option value="7月30日(火) 14:00~15:00">
+            7月30日(火) 14:00~15:00
+          </option>
+          <option value="7月31日(水) 14:00~15:00">
+            7月31日(水) 14:00~15:00
+          </option></select
+        ><br /><br />
+        ・伝えておきたい事<br />
+        <textarea cols="50" rows="5"></textarea><br /><br />
+        <button id="confirmButton">申込内容を確認</button>
         <hr />
       </div>
     </main>
@@ -124,5 +172,7 @@
       <p>Information</p>
       <div id="information"></div>
     </footer>
+
+    <script src="../js-template/consul&apply.js"></script>
   </body>
 </html>
