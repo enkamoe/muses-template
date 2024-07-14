@@ -73,9 +73,9 @@
       </div>
       <hr />
 
-      <div id="">
+      <div>
         <p>◆キャリア／就職等相談申込</p>
-        1.相談種別を選択してください。<br />
+        ・相談種別を選択してください。<br />
         <label>
           <input type="radio" name="consult" value="job" />就職相談 </label
         ><br />
@@ -113,23 +113,43 @@
           <input type="radio" name="consult" value="local" />地元就職相談</label
         ><br />
         <br />
-        2.相談日程を選択してください。<br />
+        ・相談日程を選択してください。<br />
         以下の候補から相談可能です。<br />
-        <select name="consultdate">
+        <select name="consultdate" id="consultdate">
           <option value="">希望面談日を選択してください</option>
-          <option value="7月22日(月)">7月22日(月) 14:00~15:00</option>
-          <option value="7月22日(月)">7月22日(月) 15:00~16:00</option>
-          <option value="7月22日(月)">7月22日(月) 16:00~17:00</option>
+          <option value="7月22日(月) 14:00~15:00">
+            7月22日(月) 14:00~15:00
+          </option>
+          <option value="7月22日(月) 15:00~16:00">
+            7月22日(月) 15:00~16:00
+          </option>
+          <option value="7月22日(月) 16:00~17:00">
+            7月22日(月) 16:00~17:00
+          </option>
 
-          <option value="7月23日(火)">7月23日(火) 14:00~15:00</option>
-          <option value="7月24日(水)">7月24日(水) 14:00~15:00</option>
-          <option value="7月25日(木)">7月25日(木) 14:00~15:00</option>
-          <option value="7月26日(金)">7月26日(金) 14:00~15:00</option>
-          <option value="7月29日(月)">7月29日(月) 14:00~15:00</option>
-          <option value="7月30日(火)">7月30日(火) 14:00~15:00</option>
-          <option value="7月31日(水)">7月31日(水) 14:00~15:00</option></select
+          <option value="7月23日(火) 14:00~15:00">
+            7月23日(火) 14:00~15:00
+          </option>
+          <option value="7月24日(水) 14:00~15:00">
+            7月24日(水) 14:00~15:00
+          </option>
+          <option value="7月25日(木) 14:00~15:00">
+            7月25日(木) 14:00~15:00
+          </option>
+          <option value="7月26日(金) 14:00~15:00">
+            7月26日(金) 14:00~15:00
+          </option>
+          <option value="7月29日(月) 14:00~15:00">
+            7月29日(月) 14:00~15:00
+          </option>
+          <option value="7月30日(火) 14:00~15:00">
+            7月30日(火) 14:00~15:00
+          </option>
+          <option value="7月31日(水) 14:00~15:00">
+            7月31日(水) 14:00~15:00
+          </option></select
         ><br /><br />
-        3.伝えておきたいこと<br />
+        ・伝えておきたいこと<br />
         <textarea cols="50" rows="5"></textarea><br /><br />
         <button id="confirmButton">申込内容を確認する</button>
         <hr />
