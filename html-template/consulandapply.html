@@ -9,7 +9,6 @@
     <link href="consulandapply.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
     <link href="menu.css" rel="stylesheet" />
-    <script src="../js-template/consul&apply.js"></script>
   </head>
   <body>
     <header>
@@ -51,20 +50,25 @@
           <img src="img/loupe.gif" />キャリア／就職等相談申込・確認
         </div>
         <p>◆キャリア／就職等相談申込状況</p>
-        <div id="message">○○さんの面談予定です。<br /></div>
+        <div id="message">現在の面談予定はありません。<br /></div>
         <table>
           <tr>
             <th>取消</th>
-            <th>日時</th>
             <th>相談種別</th>
+            <th>日時</th>
             <th>場所</th>
             <th>担当者</th>
           </tr>
           <tr>
-            <td class="clickable" onclick="return confirmCancel()">取消</td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td
+              id="cancel"
+              class="clickable"
+              onclick="return confirmCancel()"
+            ></td>
+            <td id="typetype"></td>
+            <td id="dayday"></td>
+
+            <td>　</td>
             <td></td>
           </tr>
         </table>
@@ -113,7 +117,7 @@
           <input type="radio" name="consult" value="local" />地元就職相談</label
         ><br />
         <br />
-        ・相談日程を選択してください。<br />
+        ・相談日を選択してください。<br />
         以下の候補から相談可能です。<br />
         <select name="consultdate" id="consultdate">
           <option value="">希望面談日を選択してください</option>
@@ -149,9 +153,9 @@
             7月31日(水) 14:00~15:00
           </option></select
         ><br /><br />
-        ・伝えておきたいこと<br />
+        ・伝えておきたい事<br />
         <textarea cols="50" rows="5"></textarea><br /><br />
-        <button id="confirmButton">申込内容を確認する</button>
+        <button id="confirmButton">申込内容を確認</button>
         <hr />
       </div>
     </main>
@@ -168,5 +172,7 @@
       <p>Information</p>
       <div id="information"></div>
     </footer>
+
+    <script src="../js-template/consul&apply.js"></script>
   </body>
 </html>

@@ -199,3 +199,7 @@ td {
 .clickable {
   cursor: pointer;
 }
+
+main {
+  font-size: 14px;
+}

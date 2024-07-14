@@ -125,6 +125,10 @@ header p:last-child {
   padding-left: 0.5rem;
 }
 
+main {
+  font-size: 14px;
+}
+
 main#top {
   display: flex;
   flex-wrap: wrap;
