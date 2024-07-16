@@ -9,6 +9,7 @@
     <link href="inqure.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
     <link href="menu.css" rel="stylesheet" />
+    <script src="../js-template/inqure.js"></script>
   </head>
   <body>
     <header>
@@ -59,13 +60,21 @@
       お問い合わせ種別：
       <select name="kind">
         <option value="">選択する</option>
-        <option value=""></option>
-        <option value=""></option>
-        <option value=""></option>
+        <option value="">キャリア支援センター宛て</option>
+        <option value="">学生部宛て</option>
+        <option value="">その他</option>
       </select>
       <br />
       内容：<br />
-      <textarea cols="50" rows="4"></textarea><br />
+      <textarea
+        id="myTextArea"
+        cols="50"
+        rows="4"
+        onfocus="clearInitialText()"
+        style="color: #999"
+      >
+      </textarea>
+      <br />
       <button>確認</button>
     </main>
     <br />
@@ -83,5 +92,6 @@
       <p>Information</p>
       <div id="information"></div>
     </footer>
+    <script src="../js-template/inqure.js"></script>
   </body>
 </html>
