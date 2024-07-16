@@ -51,16 +51,24 @@
 
       <div>
         <p>◆キャリアガイダンス・イベント申込状況</p>
-        <p id="message">○○さんの参加予定はありません。</p>
-        <br />
+        <div id="message">○○さんの参加予定はありません。</div>
+
         <table>
           <tr>
             <th>取消</th>
             <th>種別</th>
+            <th>名称</th>
             <th>開催日時</th>
             <th>場所</th>
-            <th>名称</th>
             <th>申込年月日</th>
+          </tr>
+          <tr>
+            <td id="td1">　</td>
+            <td id="td2"></td>
+            <td id="td3"></td>
+            <td id="td4"></td>
+            <td id="td5"></td>
+            <td id="td6"></td>
           </tr>
         </table>
       </div>
@@ -78,12 +86,7 @@
           </tr>
           <tr>
             <td>就活関連</td>
-
-            <td>
-              <a href="spilecture.html" target="_blank"
-                >就活にほぼ必須！SPI講座</a
-              >
-            </td>
+            <td id="spi">就活にほぼ必須！SPI講座</td>
             <td>2024年7月23日(月)16:30~18:00</td>
             <td>KM-○○</td>
           </tr>
@@ -95,10 +98,12 @@
               >
             </td>
             <td>2024年7月22日(月)16:30~18:00</td>
-
             <td>KM-○○</td>
           </tr>
         </table>
+        <div>
+          <div id="details"></div>
+        </div>
       </div>
     </main>
     <br />
@@ -116,6 +121,6 @@
       <p>Information</p>
       <div id="information"></div>
     </footer>
-    <script src="../js-template/spilecture.js"></script>
+    <script src="../js-template/duideandevent.js"></script>
   </body>
 </html>
